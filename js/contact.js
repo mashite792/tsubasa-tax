@@ -17,8 +17,11 @@ form.addEventListener('submit', function (e) {
     return;
   }
 
-  // 電話番号は数字のみ
-  if (!/^[0-9]+$/.test(tel)) {
+  // 電話番号はハイフンの有無・全角数字を問わず受け付け、数字だけにして10〜11桁か確認する
+  const telDigits = tel
+    .replace(/[０-９]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0xFEE0); })
+    .replace(/[-－ー‐\s()（）]/g, '');
+  if (!/^0[0-9]{9,10}$/.test(telDigits)) {
     errorText.textContent = '電話番号の形式が正しくありません。';
     return;
   }

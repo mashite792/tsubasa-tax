@@ -124,6 +124,26 @@ ul { list-style: none; }
 .sign { text-align: right; font-weight: 700; }
 .sign small { font-weight: 400; color: #667; }
 
+.staff-card {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid #dde4e6;
+}
+.staff-photo {
+  flex: 0 0 140px;
+  aspect-ratio: 3 / 4;
+  background: #dde4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #889;
+}
+.staff-role { font-size: 13px; color: #667; }
+.staff-name { font-size: 20px; color: #0f4c5c; margin-bottom: 6px; }
+
 .info-table, .fee-table {
   width: 100%;
   border-collapse: collapse;
@@ -189,5 +209,7 @@ ul { list-style: none; }
   .hero h1 { font-size: 22px; }
   .greeting { flex-direction: column; }
   .greeting-photo { flex-basis: auto; width: 160px; }
+  .staff-card { flex-direction: column; }
+  .staff-photo { flex-basis: auto; width: 120px; }
   .info-table th { width: 32%; }
 }
