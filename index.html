@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>つばさ税理士事務所｜仙台市青葉区の税理士</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sample-bar">このサイトは制作サンプルです。事務所名・住所・電話番号・人物はすべて架空のものです。</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">つばさ税理士事務所</a>
+    <div class="header-tel">
+      <span class="tel-num">022-000-5678</span>
+      <span class="tel-time">受付 平日 9:00〜17:00</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <ul class="container">
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="index.html#service">業務内容</a></li>
+      <li><a href="fee.html">料金</a></li>
+      <li><a href="index.html#office">事務所概要</a></li>
+      <li><a href="index.html#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>創業から事業承継まで、<br>仙台の経営者に寄り添う税理士です。</h1>
+    <p>記帳代行・決算申告から、融資の相談まで。初回のご相談は無料です。</p>
+    <a href="#contact" class="btn">無料相談を申し込む</a>
+  </div>
+</section>
+
+<section class="section" id="service">
+  <div class="container">
+    <h2 class="section-title">業務内容</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>税務顧問</h3>
+        <p>毎月の帳簿チェックと税務相談。節税のご提案も行います。</p>
+      </div>
+      <div class="service-item">
+        <h3>決算・確定申告</h3>
+        <p>法人の決算申告、個人事業主の確定申告を代行します。</p>
+      </div>
+      <div class="service-item">
+        <h3>会社設立支援</h3>
+        <p>設立手続きから、創業融資の申し込みまでサポートします。</p>
+      </div>
+    </div>
+    <p class="more"><a href="fee.html">料金を見る →</a></p>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">代表あいさつ</h2>
+    <div class="greeting">
+      <div class="greeting-photo" aria-hidden="true">写真</div>
+      <div class="greeting-text">
+        <p>つばさ税理士事務所のホームページをご覧いただき、ありがとうございます。代表税理士の高橋 誠です。</p>
+        <p>会計事務所に15年勤めたのち、2018年に仙台市青葉区で開業しました。数字の話を、専門用語を使わずにわかりやすくお伝えすることを心がけています。「こんなことを聞いてもいいのかな」という小さな疑問から、お気軽にご相談ください。</p>
+        <p class="sign">代表税理士　高橋 誠<br><small>東北税理士会 仙台北支部所属</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="office">
+  <div class="container">
+    <h2 class="section-title">事務所概要</h2>
+    <table class="info-table">
+      <tr><th>事務所名</th><td>つばさ税理士事務所</td></tr>
+      <tr><th>代表</th><td>高橋 誠（税理士）</td></tr>
+      <tr><th>所在地</th><td>〒980-0000 宮城県仙台市青葉区一番町0-0-0 つばさビル3階（架空の住所）</td></tr>
+      <tr><th>電話</th><td>022-000-5678（受付 平日 9:00〜17:00）</td></tr>
+      <tr><th>スタッフ</th><td>税理士 1名、スタッフ 3名</td></tr>
+      <tr><th>アクセス</th><td>地下鉄南北線 広瀬通駅より徒歩3分</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section bg-light" id="contact">
+  <div class="container">
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="center">お電話（平日 9:00〜17:00）またはフォームからご連絡ください。</p>
+    <form class="contact-form" id="contactForm" novalidate>
+      <label for="c-name">お名前 <span class="req">必須</span></label>
+      <input type="text" id="c-name" name="name">
+      <label for="c-tel">電話番号 <span class="req">必須</span></label>
+      <input type="tel" id="c-tel" name="tel" placeholder="例）022-000-0000">
+      <label for="c-mail">メールアドレス</label>
+      <input type="email" id="c-mail" name="mail">
+      <label for="c-body">ご相談内容 <span class="req">必須</span></label>
+      <textarea id="c-body" name="body" rows="5"></textarea>
+      <p class="form-error" id="formError"></p>
+      <button type="submit" class="btn">送信する</button>
+      <p class="form-done" id="formDone"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-name">つばさ税理士事務所</p>
+    <p>宮城県仙台市青葉区一番町0-0-0 つばさビル3階（架空の住所）</p>
+    <p>TEL 022-000-5678（受付 平日 9:00〜17:00）</p>
+    <p class="copy">&copy; 2026 Tsubasa Tax Office</p>
+  </div>
+</footer>
+
+<script src="js/contact.js"></script>
+</body>
+</html>

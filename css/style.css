@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  color: #2a3336;
+  line-height: 1.8;
+  background: #fff;
+}
+a { color: #0f4c5c; }
+ul { list-style: none; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sample-bar {
+  background: #0f4c5c;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 6px 16px;
+}
+
+/* ヘッダー */
+.header { border-bottom: 1px solid #dde4e6; }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f4c5c;
+  text-decoration: none;
+}
+.header-tel { text-align: right; line-height: 1.4; }
+.tel-num { display: block; font-size: 22px; font-weight: 700; color: #0f4c5c; letter-spacing: 0.03em; }
+.tel-time { font-size: 12px; color: #667; }
+.nav { background: #0f4c5c; }
+.nav ul { display: flex; flex-wrap: wrap; }
+.nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+.nav a:hover { background: rgba(255, 255, 255, 0.12); }
+
+/* ヒーロー */
+.hero {
+  background: linear-gradient(120deg, #e7f0f1, #f6f9f9);
+  padding: 72px 0;
+}
+.hero h1 {
+  font-size: 30px;
+  line-height: 1.6;
+  color: #0f4c5c;
+  margin-bottom: 16px;
+}
+.hero p { margin-bottom: 28px; }
+.btn {
+  display: inline-block;
+  background: #e07a2f;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn:hover { opacity: 0.85; }
+
+/* セクション */
+.section { padding: 64px 0; }
+.bg-light { background: #f4f7f7; }
+.section-title {
+  font-size: 24px;
+  color: #0f4c5c;
+  margin-bottom: 32px;
+  padding-left: 14px;
+  border-left: 5px solid #0f4c5c;
+  line-height: 1.4;
+}
+.center { text-align: center; margin-bottom: 24px; }
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.service-item {
+  border: 1px solid #dde4e6;
+  border-top: 4px solid #0f4c5c;
+  padding: 24px;
+  background: #fff;
+}
+.service-item h3 { font-size: 18px; margin-bottom: 8px; }
+.service-item p { font-size: 14px; }
+.more { text-align: right; margin-top: 20px; }
+
+.greeting { display: flex; gap: 40px; align-items: flex-start; }
+.greeting-photo {
+  flex: 0 0 220px;
+  aspect-ratio: 3 / 4;
+  background: #dde4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #889;
+}
+.greeting-text p + p { margin-top: 14px; }
+.sign { text-align: right; font-weight: 700; }
+.sign small { font-weight: 400; color: #667; }
+
+.info-table, .fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+.info-table th, .info-table td,
+.fee-table th, .fee-table td {
+  border: 1px solid #dde4e6;
+  padding: 14px 16px;
+  text-align: left;
+}
+.info-table th { width: 24%; background: #f4f7f7; }
+.fee-table th { background: #0f4c5c; color: #fff; }
+.fee-table td:not(:first-child) { text-align: right; white-space: nowrap; }
+.note { font-size: 13px; color: #667; }
+
+.page-title { background: #e7f0f1; padding: 40px 0; }
+.page-title h1 { font-size: 26px; color: #0f4c5c; }
+
+/* フォーム */
+.contact-form {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contact-form label { font-weight: 500; margin-top: 12px; }
+.contact-form input, .contact-form textarea {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid #c5cfd2;
+  border-radius: 4px;
+  width: 100%;
+}
+.req {
+  font-size: 11px;
+  background: #e07a2f;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+.contact-form .btn { margin-top: 20px; align-self: center; }
+.form-error { color: #c0392b; font-size: 14px; min-height: 1em; }
+.form-done { color: #0f4c5c; font-weight: 500; text-align: center; }
+
+/* フッター */
+.footer {
+  background: #0f4c5c;
+  color: #d5e3e6;
+  padding: 36px 0;
+  font-size: 13px;
+  text-align: center;
+}
+.footer-name { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 6px; }
+.copy { margin-top: 14px; font-size: 11px; }
+
+@media (max-width: 768px) {
+  .header-tel { text-align: left; }
+  .nav a { padding: 10px 14px; }
+  .hero { padding: 48px 0; }
+  .hero h1 { font-size: 22px; }
+  .greeting { flex-direction: column; }
+  .greeting-photo { flex-basis: auto; width: 160px; }
+  .info-table th { width: 32%; }
+}
