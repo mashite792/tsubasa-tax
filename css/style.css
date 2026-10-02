@@ -65,8 +65,9 @@ ul { list-style: none; }
   line-height: 1.6;
   color: #0f4c5c;
   margin-bottom: 16px;
-  text-wrap: balance; /* スマホで最後の数文字だけが次の行に落ちないよう、行の長さをそろえる */
 }
+/* 「寄り添う税理士です。」の途中で改行させず、最後の数文字だけが次の行に落ちるのを防ぐ */
+.nowrap { display: inline-block; }
 .hero p { margin-bottom: 28px; }
 .btn {
   display: inline-block;
